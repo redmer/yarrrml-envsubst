@@ -17,4 +17,4 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 COPY compile.sh /app/
 
 WORKDIR /app
-ENTRYPOINT ["./app/compile.sh"]
+ENTRYPOINT ["compile.sh"]
